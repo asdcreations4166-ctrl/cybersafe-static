@@ -11,7 +11,7 @@
   --shadow: 0 18px 35px rgba(0, 0, 0, 0.32);
   --radius: 18px;
   --font: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --max-width: 1100px;
+  --max-width: 1400px;
 }
 
 :root[data-theme="light"] {
@@ -348,8 +348,8 @@ a {
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
 }
 
 .card {
@@ -443,8 +443,8 @@ a {
 
 .password-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
   align-items: start;
 }
 
@@ -715,5 +715,14 @@ a {
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .shield {
+    width: 140px;
+    height: 180px;
+  }
+
+  .shield-icon {
+    font-size: 4.5rem;
   }
 }
