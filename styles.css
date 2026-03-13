@@ -203,7 +203,7 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
 }
