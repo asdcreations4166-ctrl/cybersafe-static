@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberSafe — Cybersecurity Awareness</title>
+    <meta name="description" content="A modern, interactive static website to educate users about cybersecurity threats and safety best practices." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />    <script src="https://cdn.tailwindcss.com"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="logo" href="#home" aria-label="CyberSafe logo">
+          <span class="logo-mark" aria-hidden="true">⚡</span>
+          <span class="logo-text">CyberSafe</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="#threats">Threats</a>
+          <a class="nav-link" href="#tips">Safety Tips</a>
+          <a class="nav-link" href="#password">Passwords</a>
+          <a class="nav-link" href="#cases">Cases</a>
+          <a class="nav-link" href="#quiz">Quiz</a>
+        </nav>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bars" aria-hidden="true"></span>
+        </button>
+
+        <button class="cta" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <span class="icon" aria-hidden="true">🌓</span>
+          <span class="cta-text">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content reveal" data-reveal-delay="0s">
+            <h1 class="hero-title">Stay Secure. Stay Aware.</h1>
+            <p class="hero-subtitle">
+              Learn how to spot online threats, protect your passwords, and make smarter decisions on the web.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#threats">Discover Threats</a>
+              <a class="btn outline" href="#tips">Get Safety Tips</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal" data-reveal-delay="0.1s" aria-hidden="true">
+            <div class="shield">
+              <div class="shield-glow"></div>
+              <span class="shield-icon">🛡️</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="threats">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Common Threats</h2>
+            <p class="section-lead">
+              These are the most common cybersecurity issues people face every day.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="card reveal" tabindex="0" data-reveal-delay="0s">
+              <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-person-fishing"></i></div>
+              <h3 class="card-title">Phishing</h3>
+              <p class="card-copy">
+                Fraudulent messages designed to steal credentials or financial data. Always verify sender addresses and never click suspicious links.
+              </p>
+              <a class="card-action" href="#" onclick="return false;">Learn how to spot phishing →</a>
+            </article>
+
+            <article class="card reveal" tabindex="0" data-reveal-delay="0.05s">
+              <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-bug"></i></div>
+              <h3 class="card-title">Malware</h3>
+              <p class="card-copy">
+                Software that installs without consent and can steal info, damage files, or spy on you. Keep software updated and only install trusted apps.
+              </p>
+              <a class="card-action" href="#" onclick="return false;">Prevent infections →</a>
+            </article>
+
+            <article class="card reveal" tabindex="0" data-reveal-delay="0.1s">
+              <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-id-badge"></i></div>
+              <h3 class="card-title">Identity Theft</h3>
+              <p class="card-copy">
+                When someone uses your personal data to assume your identity. Protect sensitive documents and limit what you share online.
+              </p>
+              <a class="card-action" href="#" onclick="return false;">Protect yourself →</a>
+            </article>
+
+            <article class="card reveal" tabindex="0" data-reveal-delay="0.15s">
+              <div class="card-icon" aria-hidden="true"><i class="fa-solid fa-wifi-slash"></i></div>
+              <h3 class="card-title">Unsecured Networks</h3>
+              <p class="card-copy">
+                Open public Wi‑Fi can expose your data. Use a VPN and avoid financial transactions on untrusted connections.
+              </p>
+              <a class="card-action" href="#" onclick="return false;">Stay safe on public Wi‑Fi →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section accent" id="tips">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Safety Tips</h2>
+            <p class="section-lead">
+              Small habits make a big difference. Try these rules to keep your digital life protected.
+            </p>
+          </div>
+
+          <div class="grid-responsive">
+            <div class="info-panel reveal" data-reveal-delay="0s">
+              <h3 class="panel-title">Think Before You Click</h3>
+              <p class="panel-copy">
+                Hover over links before you click, validate URLs, and be skeptical of urgent requests asking for credentials.
+              </p>
+            </div>
+            <div class="info-panel reveal" data-reveal-delay="0.05s">
+              <h3 class="panel-title">Update Often</h3>
+              <p class="panel-copy">
+                Software updates patch security issues. Enable auto‑updates for your devices and apps.
+              </p>
+            </div>
+            <div class="info-panel reveal" data-reveal-delay="0.1s">
+              <h3 class="panel-title">Use 2FA</h3>
+              <p class="panel-copy">
+                Two‑factor authentication adds an extra layer of protection even if a password is stolen.
+              </p>
+            </div>
+            <div class="info-panel reveal" data-reveal-delay="0.15s">
+              <h3 class="panel-title">Back Up Data</h3>
+              <p class="panel-copy">
+                Regular backups protect you from ransomware and accidental loss. Keep copies off‑site or in the cloud.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="password">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Password Security</h2>
+            <p class="section-lead">
+              Learn best practices for creating and managing strong passwords.
+            </p>
+          </div>
+
+          <div class="password-grid">
+            <div class="password-panel reveal" data-reveal-delay="0s">
+              <h3 class="panel-title">Strong Passwords</h3>
+              <ul class="list">
+                <li>Use unique passphrases of 12+ characters.</li>
+                <li>Include a mix of letters, numbers, and symbols.</li>
+                <li>Avoid common words and personal info.</li>
+              </ul>
+            </div>
+
+            <div class="password-panel reveal" data-reveal-delay="0.05s">
+              <h3 class="panel-title">Password Managers</h3>
+              <p class="panel-copy">
+                A manager generates and stores complex passwords so you don’t have to memorize them. Choose reputable, audited tools.
+              </p>
+            </div>
+
+            <div class="password-panel reveal" data-reveal-delay="0.1s">
+              <h3 class="panel-title">Reuse Risks</h3>
+              <p class="panel-copy">
+                Reusing passwords across sites means one breach can compromise multiple accounts. Change passwords after a leak.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section accent" id="cases">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Real‑Life Cases</h2>
+            <p class="section-lead">
+              These short scenarios highlight what can happen when security is ignored.
+            </p>
+          </div>
+
+          <div class="accordion" id="casesAccordion">
+            <button class="accordion-toggle reveal" type="button" aria-expanded="false" aria-controls="case1" data-target="case1">
+              <span>📧 CEO Fraud: $100K Wire Transfer</span>
+              <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-panel" id="case1" hidden>
+              <p>
+                A finance team received an email appearing to be from the CEO asking for an urgent wire transfer. The email was spoofed, and the funds were moved to an attacker’s account before the fraud was discovered.
+              </p>
+              <p class="small">Tip: Always verify unusual requests via a second channel (call or in‑person) before sending money.</p>
+            </div>
+
+            <button class="accordion-toggle reveal" type="button" aria-expanded="false" aria-controls="case2" data-target="case2">
+              <span>🔐 Password Reuse Leads to Account Takeover</span>
+              <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-panel" id="case2" hidden>
+              <p>
+                After a data breach, attackers used leaked credentials to log into the victim’s bank account and transfer funds. The password had been reused across multiple services.
+              </p>
+              <p class="small">Tip: Use a password manager and change compromised credentials immediately.</p>
+            </div>
+
+            <button class="accordion-toggle reveal" type="button" aria-expanded="false" aria-controls="case3" data-target="case3">
+              <span>🖥️ Public Wi‑Fi Sniffing</span>
+              <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-panel" id="case3" hidden>
+              <p>
+                A user connected to an unencrypted coffee shop network and entered login details into a fake portal. The attacker captured the credentials and used them to access the user’s accounts.
+              </p>
+              <p class="small">Tip: Use a VPN and avoid logging into sensitive sites on public networks.</p>
+            </div>
+
+            <button class="accordion-toggle reveal" type="button" aria-expanded="false" aria-controls="case4" data-target="case4">
+              <span>🧑‍💻 Ransomware Attack on a Small Business</span>
+              <span class="accordion-icon">▸</span>
+            </button>
+            <div class="accordion-panel" id="case4" hidden>
+              <p>
+                A small business opened an invoice attachment that contained ransomware. The network was encrypted, and attackers demanded payment to restore access.
+              </p>
+              <p class="small">Tip: Keep backups offline and never open attachments from unknown senders. <a href="https://www.cisa.gov/ransomware" target="_blank" rel="noopener">Learn more</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="quiz">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Quick Quiz</h2>
+            <p class="section-lead">
+              Test your cyber smarts with a short multiple-choice quiz.
+            </p>
+          </div>
+
+          <form class="quiz" id="quizForm">
+            <div class="quiz-card reveal" data-reveal-delay="0s">
+              <p class="quiz-question">1. Which is the best way to check if a link is safe?</p>
+              <div class="quiz-options">
+                <label class="quiz-option"><input type="radio" name="q1" value="a" required /> Click it and see what happens</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="b" /> Hover to view the URL before clicking</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="c" /> Only click links from unknown senders</label>
+              </div>
+            </div>
+
+            <div class="quiz-card reveal" data-reveal-delay="0.05s">
+              <p class="quiz-question">2. What is the best reason to use a password manager?</p>
+              <div class="quiz-options">
+                <label class="quiz-option"><input type="radio" name="q2" value="a" required /> So I don't have to remember any passwords</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="b" /> To generate and store unique passwords securely</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="c" /> To share passwords with friends easily</label>
+              </div>
+            </div>
+
+            <div class="quiz-card reveal" data-reveal-delay="0.1s">
+              <p class="quiz-question">3. If an email says your account is locked and demands immediate action, what should you do?</p>
+              <div class="quiz-options">
+                <label class="quiz-option"><input type="radio" name="q3" value="a" required /> Follow the link in the email right away</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="b" /> Call the support number in the email</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="c" /> Visit the site directly by typing the address yourself</label>
+              </div>
+            </div>
+
+            <div class="quiz-actions">
+              <button class="btn primary" type="submit">Submit answers</button>
+              <button class="btn outline" type="button" id="quizReset">Try again</button>
+            </div>
+
+            <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <button class="scroll-top" id="scrollTopBtn" type="button" aria-label="Scroll to top">↑</button>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3 class="footer-title">CyberSafe</h3>
+          <p class="footer-copy">
+            Crafted to help everyday users build smarter, safer habits online.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a class="footer-link" href="#threats">Threats</a>
+          <a class="footer-link" href="#tips">Tips</a>
+          <a class="footer-link" href="#password">Passwords</a>
+          <a class="footer-link" href="#cases">Cases</a>
+          <a class="footer-link" href="#quiz">Quiz</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Ajvad Cheniyath. Designed for awareness and education.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
