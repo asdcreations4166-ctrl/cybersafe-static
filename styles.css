@@ -37,8 +37,7 @@ body {
 body {
   margin: 0;
   font-family: var(--font);
-  background: radial-gradient(circle at top, rgba(74, 209, 255, 0.22), transparent 55%),
-    radial-gradient(circle at 25% 10%, rgba(255, 159, 67, 0.14), transparent 55%),
+  background: radial-gradient(circle at 25% 10%, rgba(255, 159, 67, 0.14), transparent 55%),
     var(--bg);
   color: var(--text);
   scroll-behavior: smooth;
@@ -327,7 +326,7 @@ a {
 }
 
 .section.accent {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--surface);
 }
 
 .section-header {
